@@ -4,7 +4,7 @@ import { Title,Text } from '../components/Typography'
 
 function Login (){
     return(
-    <div>Login</div>
+    <div>text</div>
     )
 }
 export default Login
