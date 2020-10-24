@@ -52,7 +52,7 @@
     "prettier-config-standard": "^1.0.1"
   },
   "jest": {
-    "collectCoverageform":[
+    "collectCoverageform": [
       "src/componets/**/*.{js,jex,ts,tex}",
       "src/service/**/*.{js,jex,ts,tex}",
       "src/utils/**/*.{js,jex,ts,tex}"
