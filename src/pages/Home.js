@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import backgroundImage from '../assets/jessica-arends-8saVYOMHFzU-unsplash.jpg'
+import backgroundImage from '../assets/home.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import { Title, Subtitle } from '../components/Typography'
 
 const Button = styled.button`
-padding: 1rem .5rem;
+padding: .2rem .5rem;
 background-color:transparent;
-border: #fff solid 1px;
-border-radius:8px;
+border: #fff solid 3px;
+border-radius:5px;
 margin:1rem;
 color: #fff ;
 cursor:pointer;
@@ -24,7 +24,7 @@ text-transform: uppercase;
 `
  
 const Content = styled.div`
-padding: 8rem;
+padding: 4rem;
 `
 
 function Home() {
