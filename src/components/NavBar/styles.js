@@ -1,23 +1,37 @@
 import styled from 'styled-components'
-
 export const Container = styled.div`
-  width: 100vw;
-  z-index: 9001;
-  background-color: ${prprs => (prprs.isScroll ? '#fff' : 'transparent')};
-  position: ${props => (props.isScroll ? 'fixed' : 'static')};
+  width: 100%;
+  /* position: ${props => (props.isScroll ? 'fixed' : 'static')}; */
+  position: fixed;
+  z-index: 10000;
+  background-color: ${props => (props.isScroll ? '' : '')};
+  color: ${props => (props.isScroll ? '#DFCFAF' : '#DFCFAF')};
+  transition: background-color .5s;
 `
 export const Wrapper = styled.div`
   display: flex;
-  flex: 1;
   padding: 2rem;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 `
-export const Logo = styled.div``
-
-export const ActionContainer = styled.ul`
+export const Logo = styled.div`
+  font-size: 24px;
+  font-weight: 900;
+`
+export const ActionContainer = styled.div`
   display: flex;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  a{
+    border-right: 1px solid #DFCFAF;
+    padding: 0 3rem;
+  }
 `
 export const Action = styled.li`
-  padding: 0 1rem;
+  list-style-type: none;
+`
+export const LoginContainer =styled.div`
+  font-size: 24px;
+  font-weight: 900;
 `
