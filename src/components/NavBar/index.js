@@ -14,13 +14,16 @@ function NavBar() {
             <Link to='/'>Home</Link>
           </Action>
           <Action>
-            <Link to='/about'>Review</Link>
+            <Link to='/review'>Review</Link>
           </Action>
           <Action>
-            <Link to='/contact'>Community</Link>
+            <Link to='/community'>Community</Link>
           </Action>
           <Action>
-            <Link to='/story'>Register</Link>
+            <Link to='/register'>Register</Link>
+          </Action>
+          <Action>
+          <Link to='/login'>Login</Link>
           </Action>
         </ActionContainer>
       </Wrapper>
