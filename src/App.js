@@ -28,4 +28,4 @@ function App () {
     </>
   )
 }
-export default withHelmet('Wiraphan | Blog App')(App)
+export default withHelmet('Cafe for you')(App)
