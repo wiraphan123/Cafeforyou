@@ -50,7 +50,7 @@ function Home() {
         
       <Container>
         <Content>
-          <title>RECOMMENDED</title>
+        <Title> RECOMMENDED </Title>
           <Showcafe>
             <h4>Cafe</h4>
             <p>Wake up</p>
