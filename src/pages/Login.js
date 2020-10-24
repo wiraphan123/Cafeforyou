@@ -1,10 +1,72 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Title,Text } from '../components/Typography'
+import backgroundImage from '../assets/login-register.jpg'
+
+
+
+const  Containerleft = styled.div`
+    img{
+        width: 50vw;
+        height: 100vh;
+    }
+`
+const Containerright = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-weight: bold;
+    }
+`
+
+const Test = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+`
+
+const Input = styled.input`
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0 30px;
+    height: 30px;
+    width: 400px;
+    margin-top: 75px;
+`
+
+const Button = styled.button`
+    background-color: unset;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: gray;
+    margin-top: 100px;
+    cursor: pointer;
+    :hover{
+        background-color: gray;
+        color: white;
+    }
+`
 
 function Login (){
     return(
-    <div>text</div>
+    <>
+    <Test>
+    <Containerleft>
+     <img src = {backgroundImage} />
+     </Containerleft>
+    <Containerright>
+        <h1>LOGIN</h1>
+        <Input placeholder='USERNAME'></Input>
+        <Input placeholder='PASSWORD'></Input>  
+        <Button>LOGIN</Button>  
+     </Containerright>
+    </Test> 
+    </>
     )
 }
 export default Login
