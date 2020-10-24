@@ -4,6 +4,7 @@ import backgroundImage from '../assets/login-register.jpg'
 
 
 
+
 const  Containerleft = styled.div`
     img{
         width: 50vw;
@@ -19,6 +20,12 @@ const Containerright = styled.div`
     flex-direction: column;
     h1{
         font-weight: bold;
+    }
+    a{
+        color: blue;
+    }
+    span{
+        margin-top: 50px;
     }
 `
 
@@ -62,7 +69,8 @@ function Login (){
     <Containerright>
         <h1>LOGIN</h1>
         <Input placeholder='USERNAME'></Input>
-        <Input placeholder='PASSWORD'></Input>  
+        <Input placeholder='PASSWORD'></Input> 
+        <span class="psw">Forgot <a href="#">password?</a></span> 
         <Button>LOGIN</Button>  
      </Containerright>
     </Test> 
