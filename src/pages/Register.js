@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import backgroundImage from '../assets/login-register.jpg'
 import { Link } from 'react-router-dom'
 
-
-
 const  Containerleft = styled.div`
     img{
         width: 50vw;
@@ -66,7 +64,7 @@ function Register (){
             <Input placeholder='LASTNAME'></Input>
             <Input placeholder='E-MAIL'></Input> 
             <Input placeholder='PASSWORD'></Input>
-            <Button><Link to='/Register'>SIGN UP</Link></Button>  
+            <Button><Link to='/Login'>SIGN UP</Link></Button>
          </Containerright>
         </Test> 
         </>
