@@ -7,6 +7,7 @@ import image from '../assets/wakeup.jpg'
 const Container = styled.div`
   display: flex;
   border-radius:2px;
+  width:50%;
 `
 
 const TextBlock = styled.div`
@@ -50,29 +51,11 @@ function Showcafe ({ children }) {
   return (
     <Container>
       <Item>
-        <Link>
+        <Link to='/Review'>
           <BackgroundBlock src={image} height='40' />
           <TextBlock>
             <Text>{children}</Text>
           </TextBlock>
-        </Link>
-      </Item>
-      <Item>
-        <Link>
-          <BackgroundBlock src={image} height='40'>
-            <TextBlock>
-              <Text>{children}</Text>
-            </TextBlock>
-          </BackgroundBlock>
-        </Link>
-      </Item>
-      <Item>
-        <Link>
-          <BackgroundBlock src={image} height='40'>
-            <TextBlock>
-              <Text>{children}</Text>
-            </TextBlock>
-          </BackgroundBlock>
         </Link>
       </Item>
     </Container>
