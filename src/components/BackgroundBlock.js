@@ -7,11 +7,11 @@ const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  position: relative;
+  /* background-attachment: fixed;
+  position: relative; */
 `
 const BackgroundOverlay = styled.div`
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.4);
