@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   html,body,#root{
     height:100vh;
-    width:100vw;
+    width:100%;
     font-family: 'Kanit',sans-serif;
     font-size: 20px;
     scroll-behavior: smooth;

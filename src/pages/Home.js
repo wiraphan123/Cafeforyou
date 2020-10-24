@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import backgroundImage from '../assets/home.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
+import Showcafe from '../components/Showcafe'
+//import SlideShow from '../components/SlideShow'
+
 import { Title, Subtitle } from '../components/Typography'
 
 const Button = styled.button`
@@ -22,9 +25,18 @@ text-transform: uppercase;
   color: #cf7b7e;
 }
 `
- 
+const title = styled.div`
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 1rem 0;
+`
+const Container = styled.div`
+  padding: 2rem 6rem;
+`
+
 const Content = styled.div`
-padding: 4rem;
+  padding-bottom: 2rem;
 `
 
 function Home() {
@@ -35,11 +47,18 @@ function Home() {
           <Subtitle> recommended and reviwe </Subtitle>
           <Button as='a' href='#content'>Look Review  </Button>
         </BackgroundBlock>
-        <Content id='content'>
         
-        
+      <Container>
+        <Content id ='content'>
+        <Title> RECOMMENDED </Title>
+          <Showcafe>
+            <h4>Cafe</h4>
+            <p>Wake up</p>
+          </Showcafe>
         </Content>
+      </Container>
       </>
   )
 }
+
 export default Home
