@@ -25,6 +25,9 @@ function NavBar() {
           <Action>
           <Link to='/login'>Login</Link>
           </Action>
+          <Action>
+            <Link to='/about'>Login</Link>
+          </Action>
         </ActionContainer>
       </Wrapper>
     </Container>
