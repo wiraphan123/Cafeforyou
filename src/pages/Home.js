@@ -32,8 +32,8 @@ function Home() {
     <>
       <BackgroundBlock src={backgroundImage}>
       <Title> Cafe For You </Title>
-          <Subtitle> We hope you will find a good coffee shop in our website </Subtitle>
-          <Button as='a' href='#content'>Look around </Button>
+          <Subtitle> recommended and reviwe </Subtitle>
+          <Button as='a' href='#content'>Look  </Button>
         </BackgroundBlock>
         <Content id='content'>
         
