@@ -32,11 +32,13 @@ const title = styled.div`
   padding: 1rem 0;
 `
 const Container = styled.div`
-  padding: 2rem 6rem;
+  
+  
 `
 
 const Content = styled.div`
   padding-bottom: 2rem;
+  display:flex;
 `
 
 function Home() {
@@ -45,12 +47,19 @@ function Home() {
       <BackgroundBlock src={backgroundImage}>
       <Title> Cafe For You </Title>
           <Subtitle> recommended and reviwe </Subtitle>
-          <Button as='a' href='#content'>Look Review  </Button>
+          <Button as='a' href='#content'> Look Review  </Button>
         </BackgroundBlock>
         
       <Container>
         <Content id ='content'>
-        <Title> RECOMMENDED </Title>
+          <Showcafe>
+            <h4>Cafe</h4>
+            <p>Wake up</p>
+          </Showcafe>
+          <Showcafe>
+            <h4>Cafe</h4>
+            <p>Wake up</p>
+          </Showcafe>
           <Showcafe>
             <h4>Cafe</h4>
             <p>Wake up</p>
