@@ -6,16 +6,21 @@ export default{
         exact: true,
         component: lazy(() => import ('../pages/Home'))
     },
-    About: {
-        path: '/review',
+    Reviwe: {
+        path: '/Review',
         component: lazy(() => import('../pages/Review'))
     },
-    Contact: {
-        path: '/contact',
-        component: lazy(() => import('../pages/Contact'))
+    Community: {
+        path: '/Community',
+        component: lazy(() => import('../pages/Community'))
     },
-    Story:{
-        path:'/story/:storyId',
-        component: lazy (()=> import('../pages/Story'))
+    Register:{
+        path:'/Register',
+        component: lazy (()=> import('../pages/Register'))
+    },
+    Login:{
+        path:'/Login',
+        component: lazy (()=> import('../pages/Login'))
     }
+    
 }
