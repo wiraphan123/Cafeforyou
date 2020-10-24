@@ -18,10 +18,6 @@ function Review () {
       
     </BackgroundBlock>
     <BackgroundBlock src = {backgroundImage2}>
-      <Text>
-        
-      </Text>
-
     </BackgroundBlock>
     </>
 
