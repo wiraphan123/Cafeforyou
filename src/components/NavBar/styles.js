@@ -37,6 +37,7 @@ export const ActionContainer = styled.div`
 `
 export const Action = styled.li`
   list-style-type: none;
+  color:white;
 `
 export const LoginContainer =styled.div`
   font-size: 20px;
