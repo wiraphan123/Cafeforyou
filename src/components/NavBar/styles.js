@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  /* position: ${props => (props.isScroll ? 'fixed' : 'static')}; */
+  position: ${props => (props.isScroll ? 'fixed' : 'static')};
   position: fixed;
   z-index: 1000;
   background-color: ${props => (props.isScroll ? '#008B8B' : 'rgba(192,192,192,0.3)')};
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   padding: 1rem;
-  /* flex: 1; */
+  flex: 1;
   justify-content: space-between;
 
 `
