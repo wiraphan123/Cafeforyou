@@ -7,8 +7,8 @@ export default{
         component: lazy(() => import ('../pages/Home'))
     },
     About: {
-        path: '/about',
-        component: lazy(() => import('../pages/About'))
+        path: '/review',
+        component: lazy(() => import('../pages/Review'))
     },
     Contact: {
         path: '/contact',
