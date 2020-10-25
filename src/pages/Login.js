@@ -11,6 +11,7 @@ const  Containerleft = styled.div`
         height: 100vh;
     }
 `
+
 const Containerright = styled.div`
     width: 100%;
     height: 100%;
@@ -28,6 +29,7 @@ const Containerright = styled.div`
         margin-top: 50px;
     }
 `
+
 
 const Test = styled.div`
     width: 100%;
