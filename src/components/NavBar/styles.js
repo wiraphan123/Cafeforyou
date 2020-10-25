@@ -6,7 +6,6 @@ export const Container = styled.div`
   position: fixed;
   z-index: 1000;
   background-color: ${props => (props.isScroll ? '#008B8B' : 'rgba(192,192,192,0.3)')};
-  color:white;
   transition: background-color .5s;
   display: flex;
   justify-content: space-between;
@@ -30,7 +29,7 @@ export const ActionContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: white;
   a{
   padding: 0 2rem;
   }
