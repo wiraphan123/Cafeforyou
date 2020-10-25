@@ -41,7 +41,9 @@ const Content = styled.div`
 
 const Test = styled.div`
 font-size:25px;
-padding:2px;
+padding:27px;
+text-align:center;
+
 `
 
 function Home() {
@@ -54,10 +56,12 @@ function Home() {
         </BackgroundBlock>
         
       <Container>
-        <Content id ='content'>
-          <Test>
+        <Test>
           RECOMMENDED
           </Test>
+          
+          <Content id ='content'>
+          
           <Showcafe>
             <h4>Cafe</h4>
             <p>Wake up</p>
