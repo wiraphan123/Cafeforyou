@@ -10,6 +10,7 @@ const ContainerWrapper = styled.div`
     display: flex;
     justify-content:space-around;
 `
+
 const Container = styled.div`
     font-size:1rem;
     color:black;
@@ -21,6 +22,7 @@ const Container = styled.div`
       padding:15px;
     }
 `
+
 const Content = styled.div`
     border:2px solid black;
     padding:58px;
@@ -32,9 +34,8 @@ const Content = styled.div`
     }
 `
 
+
 const ContainerBox = styled.div`
-
-
 p{
 justify-content:center;
 align-items:center;
@@ -42,6 +43,7 @@ display:flex;
 padding:30px;
 }
 `
+
 const Test = styled.div`
 width: 100%;
     height: 200px;
