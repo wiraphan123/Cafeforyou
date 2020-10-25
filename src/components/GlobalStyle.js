@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     width:100%;
     font-family: 'Kanit',sans-serif;
     font-size: 20px;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
   a {
     text-decoration: none;
