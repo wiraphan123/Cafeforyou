@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import backgroundImage from '../assets/home.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import Showcafe from '../components/Showcafe'
-
-
 import { Title, Subtitle } from '../components/Typography'
 
 const Button = styled.button`
