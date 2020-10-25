@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import backgroundImage from '../assets/login-register.jpg'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -73,7 +73,7 @@ function Login (){
         <Input placeholder='USERNAME'></Input>
         <Input placeholder='PASSWORD'></Input> 
         <span class="psw">Forgot <a href="#">password?</a></span> 
-        <Button>LOGIN</Button>  
+        <Button><Link to='/'>LOGIN</Link></Button>  
      </Containerright>
     </Test> 
     </>
