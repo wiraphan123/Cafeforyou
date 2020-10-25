@@ -7,8 +7,8 @@ export const Container = styled.div`
   z-index: 1000;
   background-color: ${props => (props.isScroll ? '#008B8B' : 'rgba(192,192,192,0.3)')};
   transition: background-color .5s;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 
 `
 export const Wrapper = styled.div`
@@ -25,7 +25,7 @@ export const Logo = styled.div`
   width: 100px;
 `
 export const ActionContainer = styled.div`
-  width: 50%;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
