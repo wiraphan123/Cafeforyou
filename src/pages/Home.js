@@ -51,7 +51,7 @@ function Home() {
     <>
       <BackgroundBlock src={backgroundImage}>
       <Title> Cafe For You </Title>
-          <Subtitle> recommended and reviwe </Subtitle>
+          <Subtitle> Recommended and Reviwe </Subtitle>
           <Button as='a' href='#content'> Look Review  </Button>
         </BackgroundBlock>
         
