@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import backgroundImage from '../assets/login-register.jpg'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -11,6 +11,7 @@ const  Containerleft = styled.div`
         height: 100vh;
     }
 `
+
 const Containerright = styled.div`
     width: 100%;
     height: 100%;
@@ -28,6 +29,7 @@ const Containerright = styled.div`
         margin-top: 50px;
     }
 `
+
 
 const Test = styled.div`
     width: 100%;
@@ -71,7 +73,7 @@ function Login (){
         <Input placeholder='USERNAME'></Input>
         <Input placeholder='PASSWORD'></Input> 
         <span class="psw">Forgot <a href="#">password?</a></span> 
-        <Button>LOGIN</Button>  
+        <Button><Link to='/'>LOGIN</Link></Button>  
      </Containerright>
     </Test> 
     </>

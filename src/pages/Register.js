@@ -10,6 +10,7 @@ const  Containerleft = styled.div`
         height: 100vh;
     }
 `
+
 const Containerright = styled.div`
     width: 100%;
     height: 100%;
@@ -29,6 +30,7 @@ const Test = styled.div`
     flex-direction: row;
 `
 
+
 const Input = styled.input`
     border: none;
     border-bottom: 1px solid gray;
@@ -37,6 +39,7 @@ const Input = styled.input`
     width: 400px;
     margin-top: 75px;
 `
+
 
 const Button = styled.button`
     background-color: unset;
@@ -52,6 +55,7 @@ const Button = styled.button`
     }
 `
 
+
 function Register (){
     return(
         <>
@@ -65,7 +69,7 @@ function Register (){
             <Input placeholder='LASTNAME'></Input>
             <Input placeholder='E-MAIL'></Input> 
             <Input placeholder='PASSWORD'></Input>
-            <Button><Link to='/Register'>SIGN UP</Link></Button>  
+            <Button><Link to='/Login'>SIGN UP</Link></Button>
          </Containerright>
         </Test> 
         </>

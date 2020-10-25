@@ -22,7 +22,7 @@ text-transform: uppercase;
 
 &:hover{
   background-color: #fff;
-  color: #cf7b7e;
+  color: #2F4F4F;
 }
 `
 const title = styled.div`
@@ -32,11 +32,18 @@ const title = styled.div`
   padding: 1rem 0;
 `
 const Container = styled.div`
-  padding: 2rem 6rem;
+  
+  
 `
 
 const Content = styled.div`
   padding-bottom: 2rem;
+  display:flex;
+`
+
+const Test = styled.div`
+font-size:25px;
+padding:2px;
 `
 
 function Home() {
@@ -45,12 +52,22 @@ function Home() {
       <BackgroundBlock src={backgroundImage}>
       <Title> Cafe For You </Title>
           <Subtitle> recommended and reviwe </Subtitle>
-          <Button as='a' href='#content'>Look Review  </Button>
+          <Button as='a' href='#content'> Look Review  </Button>
         </BackgroundBlock>
         
       <Container>
         <Content id ='content'>
-        <Title> RECOMMENDED </Title>
+          <Test>
+          RECOMMENDED
+          </Test>
+          <Showcafe>
+            <h4>Cafe</h4>
+            <p>Wake up</p>
+          </Showcafe>
+          <Showcafe>
+            <h4>Cafe</h4>
+            <p>Wake up</p>
+          </Showcafe>
           <Showcafe>
             <h4>Cafe</h4>
             <p>Wake up</p>
