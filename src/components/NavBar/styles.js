@@ -42,3 +42,7 @@ export const LoginContainer =styled.div`
   font-size: 20px;
   font-weight: 500;
 `
+
+export const LogoImage = styled.div`
+  width:6%;
+`
