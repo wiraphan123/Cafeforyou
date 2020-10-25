@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import backgroundImage from '../assets/home.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import Showcafe from '../components/Showcafe'
-
-
 import { Title, Subtitle } from '../components/Typography'
 
 const Button = styled.button`
@@ -43,7 +41,9 @@ const Content = styled.div`
 
 const Test = styled.div`
 font-size:25px;
-padding:2px;
+padding:27px;
+text-align:center;
+
 `
 
 function Home() {
@@ -56,10 +56,12 @@ function Home() {
         </BackgroundBlock>
         
       <Container>
-        <Content id ='content'>
-          <Test>
+        <Test>
           RECOMMENDED
           </Test>
+          
+          <Content id ='content'>
+          
           <Showcafe>
             <h4>Cafe</h4>
             <p>Wake up</p>
