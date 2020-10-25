@@ -4,6 +4,7 @@ import backgroundImage from '../assets/reviwe.jpg'
 import backgroundImage2 from '../assets/wakeup.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import { Title } from '../components/Typography'
+import { Link } from 'react-router-dom' 
 
 const ReviewBackground = styled.div`
 h1{
@@ -22,10 +23,6 @@ text-align: center;
 color:white;
 `
 
-const BoxReviwe = styled.div`
-`
-
-
 function Review () {
   return (
     <>
@@ -41,15 +38,9 @@ function Review () {
           WAKE UP CAFE
         </Test>
         </h1>
-
-        <BoxReviwe>
-
-        </BoxReviwe>
-        
-
-      </ReviewBackground>
-    
+</ReviewBackground>
     <BackgroundBlock src = {backgroundImage2}>
+      
     </BackgroundBlock>
     
     </>
