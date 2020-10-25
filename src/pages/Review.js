@@ -4,7 +4,6 @@ import backgroundImage from '../assets/reviwe.jpg'
 import backgroundImage2 from '../assets/wakeup.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import { Title } from '../components/Typography'
-import { Link } from 'react-router-dom' 
 
 const ReviewBackground = styled.div`
 h1{
@@ -17,10 +16,10 @@ h1{
 `
 
 const Test = styled.div`
-font-size:150px;
-padding:15%;
-text-align: center;
-color:white;
+  font-size:150px;
+  padding:15%;
+  text-align: center;
+  color:white;
 `
 
 function Review () {
