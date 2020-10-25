@@ -22,7 +22,7 @@ text-transform: uppercase;
 
 &:hover{
   background-color: #fff;
-  color: #cf7b7e;
+  color: #2F4F4F;
 }
 `
 const title = styled.div`
@@ -41,6 +41,11 @@ const Content = styled.div`
   display:flex;
 `
 
+const Test = styled.div`
+font-size:25px;
+padding:2px;
+`
+
 function Home() {
   return (
     <>
@@ -52,6 +57,9 @@ function Home() {
         
       <Container>
         <Content id ='content'>
+          <Test>
+          RECOMMENDED
+          </Test>
           <Showcafe>
             <h4>Cafe</h4>
             <p>Wake up</p>
