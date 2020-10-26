@@ -63,16 +63,16 @@ function Home() {
           <Content id ='content'>
           
           <Showcafe>
-            <h4>Cafe</h4>
-            <p>Wake up</p>
+            <h4>Wake Up</h4>
+            <p>ร้านกาแฟ/ชาเบเกอรี/เค้กของหวาน</p>
           </Showcafe>
           <Showcafe>
-            <h4>Cafe</h4>
-            <p>Wake up</p>
+            <h4>Wake Up</h4>
+            <p>ร้านกาแฟ/ชาเบเกอรี/เค้กของหวาน</p>
           </Showcafe>
           <Showcafe>
-            <h4>Cafe</h4>
-            <p>Wake up</p>
+            <h4>Wake Up</h4>
+            <p>ร้านกาแฟ/ชาเบเกอรี/เค้กของหวาน</p>
           </Showcafe>
         </Content>
       </Container>
