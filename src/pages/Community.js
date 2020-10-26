@@ -28,7 +28,7 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
-    border:2px solid black;
+    border:1px solid black;
     padding:58px;
     border-radius:35px;
     p{
