@@ -37,7 +37,7 @@ const Input = styled.input`
     padding: 0 30px;
     height: 30px;
     width: 400px;
-    margin-top: 75px;
+    margin-top: 20px;
 `
 
 
