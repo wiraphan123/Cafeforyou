@@ -72,7 +72,7 @@ function Login (){
         <h1>LOGIN</h1>
         <Input placeholder='USERNAME OR G-MAIL'></Input>
         <Input placeholder='PASSWORD'></Input> 
-        <span class="psw">Forgot <a href="#">password?</a></span> 
+        <span class="psw">Forgot <a href="Password">password?</a></span> 
         <Button><Link to='/'>LOGIN</Link></Button>  
      </Containerright>
     </Test> 
