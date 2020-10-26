@@ -75,7 +75,7 @@ function Review () {
     <BackgroundBlock src = {backgroundImage}>
 
       <Title>
-        review
+        Review
       </Title>
       </BackgroundBlock>
       <ReviewBackground>
