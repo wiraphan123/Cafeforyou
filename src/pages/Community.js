@@ -105,7 +105,7 @@ function Community (){
                 
                 
                 <ContainerBox> 
-                    <p>ASK?</p>
+                    <p>COMMENT & REVIWE</p>
                 </ContainerBox>
                 <Test>
                 <Input type="text" placeholder ='The message'></Input>
