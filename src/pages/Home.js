@@ -52,12 +52,12 @@ function Home() {
       <BackgroundBlock src={backgroundImage}>
       <Title> Cafe For You </Title>
           <Subtitle> Recommended and Reviwe </Subtitle>
-          <Button as='a' href='#content'> Look Review  </Button>
+          <Button as='a' href='#content'> Review  </Button>
         </BackgroundBlock>
         
       <Container>
         <Test>
-          RECOMMENDED
+          Recommended
           </Test>
           
           <Content id ='content'>
