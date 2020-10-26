@@ -5,7 +5,7 @@ export const Container = styled.div`
   position: ${props => (props.isScroll ? 'fixed' : 'static')};
   position: fixed;
   z-index: 1000;
-  background-color: ${props => (props.isScroll ? '#008B8B' : 'rgba(192,192,192,0.3)')};
+  background-color: ${props => (props.isScroll ? '#DAA520' : 'rgba(0,0,0,0.3)')};
   transition: background-color .5s;
   /* display: flex;
   justify-content: space-between; */
@@ -31,7 +31,7 @@ export const ActionContainer = styled.div`
   align-items: center;
   color: white;
   a{
-  padding: 0 2rem;
+  padding: 0 1.7rem;
   }
 `
 export const Action = styled.li`
