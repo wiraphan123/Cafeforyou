@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import BackgroundBlock from '../components/BackgroundBlock'
 import image from '../assets/wakeup.jpg'
 
+
 const Container = styled.div`
   display: flex;
   border-radius:2px;
@@ -30,7 +31,6 @@ const Item = styled.div`
   //padding: 2rem 0;
   position: relative;
   width: 50%;
-  
   &:hover ${TextBlock} {
   height: 100%;
 }
@@ -47,12 +47,12 @@ const Text = styled.div`
   text-align: center;
 `
 
-function Showcafe ({ children }) {
+function Showcafe ({images,children}) {
   return (
     <Container>
       <Item>
         <Link to='/Review'>
-          <BackgroundBlock src={image} height='40' />
+          <BackgroundBlock src={images} height='40' />
           <TextBlock>
             <Text>{children}</Text>
           </TextBlock>

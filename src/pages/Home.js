@@ -4,6 +4,9 @@ import backgroundImage from '../assets/home.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import Showcafe from '../components/Showcafe'
 import { Title, Subtitle } from '../components/Typography'
+import transitnumber8 from '../assets/transitnumber8.jpg';
+import wakeupcafe from '../assets/wakeup-cafe.jpg';
+import starbuck from '../assets/starbuck.jpg';
 
 const Button = styled.button`
 padding: .2rem .5rem;
@@ -62,16 +65,16 @@ function Home() {
           
           <Content id ='content'>
           
-          <Showcafe>
+          <Showcafe images={transitnumber8}>
+            <h4>Transitnumber8</h4>
+            <p>ร้านกาแฟ/ชาเบเกอรี/เค้กของหวาน</p>
+          </Showcafe>
+          <Showcafe images={wakeupcafe}>
             <h4>Wake Up</h4>
             <p>ร้านกาแฟ/ชาเบเกอรี/เค้กของหวาน</p>
           </Showcafe>
-          <Showcafe>
-            <h4>Wake Up</h4>
-            <p>ร้านกาแฟ/ชาเบเกอรี/เค้กของหวาน</p>
-          </Showcafe>
-          <Showcafe>
-            <h4>Wake Up</h4>
+          <Showcafe images={starbuck}>
+            <h4>Starduck</h4>
             <p>ร้านกาแฟ/ชาเบเกอรี/เค้กของหวาน</p>
           </Showcafe>
         </Content>
