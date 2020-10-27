@@ -21,6 +21,11 @@ export default{
     Login:{
         path:'/Login',
         component: lazy (()=> import('../pages/Login'))
+    },
+    Password:{
+        path:'/Password',
+        component: lazy (()=> import('../pages/Password'))
     }
+    
     
 }

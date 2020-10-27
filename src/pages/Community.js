@@ -2,12 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import backgroundImage from '../assets/community.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
-import { Title,} from '../components/Typography'
 import { Link } from 'react-router-dom'
 import { render } from '@testing-library/react'
 
 
 
+
+const Title = styled.div`
+font-size:230px;
+color:white;
+`
 
 const ContainerWrapper = styled.div`
     display: flex;
@@ -27,7 +31,7 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
-    border:2px solid black;
+    border:1px solid black;
     padding:58px;
     border-radius:35px;
     p{
@@ -48,7 +52,7 @@ padding:30px;
 `
 
 const Test = styled.div`
-width: 100%;
+    width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
