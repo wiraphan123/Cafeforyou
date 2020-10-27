@@ -88,7 +88,7 @@ export default class Community extends Component {
             review: '',
             comment: '',
             reviews: ["มีร้านคาเฟ่ที่มีใกล้มอบ้างครับ","มีร้านคาเฟ่ที่ไหนถ่ายรูปบ้างคะ"],
-            comments: ['WAKE UP หน้ามอ','TRANSIT NO.8']
+            comments: ['WAKE UP ','TRANSIT NO.8']
         }
         this.handleInputChange = this.handleInputChange.bind(this)
         this.submitReview = this.submitReview.bind(this)
@@ -144,7 +144,7 @@ export default class Community extends Component {
                     </Container>
 
                     <Container>
-                        <p>REVIEW</p>
+                        <p>REVIEW/POST</p>
                         <Content>
                            
                             {this.state.reviews.map((review) => {

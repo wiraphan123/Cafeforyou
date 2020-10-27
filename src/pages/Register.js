@@ -65,10 +65,10 @@ function Register (){
          </Containerleft>
         <Containerright>
             <h1>REGISTER</h1>
-            <Input placeholder='FRISTNAME(EX-WIRAPHAN)'></Input>
-            <Input placeholder='LASTNAME(EX-LANOI)'></Input>
-            <Input placeholder='G-MAIL(EX-Abs@gmail.com)'></Input> 
-            <Input placeholder='PASSWORD(EX-Baa123456)'></Input>
+            <Input placeholder='FRISTNAME'></Input>
+            <Input placeholder='LASTNAME'></Input>
+            <Input placeholder='E-MAIL'></Input> 
+            <Input placeholder='PASSWORD'></Input>
             <Button><Link to='/Login'>SIGN UP</Link></Button>
          </Containerright>
         </Test> 
