@@ -4,6 +4,9 @@ import backgroundImage from '../assets/community.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import { Title,} from '../components/Typography'
 import { Link } from 'react-router-dom'
+import { render } from '@testing-library/react'
+
+
 
 
 const ContainerWrapper = styled.div`
@@ -76,6 +79,7 @@ background-color: unset;
     }
     `
 
+
 function Community (){
     return(
 
@@ -103,6 +107,7 @@ function Community (){
             </Container>
     </ContainerWrapper>
                 
+
                 
                 <ContainerBox> 
                     <p>COMMENT & REVIWE</p>
@@ -111,8 +116,11 @@ function Community (){
                 <Input type="text" placeholder ='The message'></Input>
                 <Button><Link to='/Community'>POST</Link></Button>
                 </Test>
+              
+               
 
 </>
     )
 }
+
 export default Community
