@@ -1,9 +1,8 @@
-// import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import backgroundImage from '../assets/community.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import { Link } from 'react-router-dom'
-import React, { Component } from 'react'
 
 const Title = styled.div`
 font-size:230px;
@@ -86,11 +85,15 @@ export default class Community extends Component {
         super()
 
         this.state = {
-            item: '',
-            items: []
+            review: '',
+            comment: '',
+            reviews: ["มีร้านคาเฟ่ที่มีใกล้มอบ้างครับ","มีร้านคาเฟ่ที่ไหนถ่ายรูปบ้างคะ"],
+            comments: ['WAKE UP หน้ามอ','TRANSIT NO.8']
         }
         this.handleInputChange = this.handleInputChange.bind(this)
-        this.submitItem = this.submitItem.bind(this)
+        this.submitReview = this.submitReview.bind(this)
+        this.submitComment = this.submitComment.bind(this)
+
 
     }
 
@@ -101,14 +104,25 @@ export default class Community extends Component {
         this.setState({ [name]: value })
     }
 
-    submitItem() {
-        let items = this.state.items
-        let item = this.state.item
-        items.push(item)
+    submitReview() {
+        let reviews = this.state.reviews
+        let review = this.state.review
+        reviews.push(review)
 
-        this.setState({ items: items })
+        this.setState({ reviews: reviews })
 
     }
+
+    submitComment() {
+        let comments = this.state.comments
+        let comment = this.state.comment
+        comments.push(comment)
+
+        this.setState({ comments: comments })
+
+    }
+
+ 
     render() {
         return (
             <div>
@@ -118,21 +132,24 @@ export default class Community extends Component {
 
                 <ContainerWrapper>
                     <Container>
-                        <p>COMMUNITY</p>
+                        <p>COMMENT</p>
                         <Content>
-                            <p>WAKE UP หน้ามอ</p>
-                            <p>TRANSIT NO.8</p>
+                            
+                            {this.state.comments.map((comment) => {
+                                return (
+                                        <p>{comment}</p>                                 
+                                )
+                            })}
                         </Content>
                     </Container>
 
                     <Container>
-                        <p>POST</p>
+                        <p>REVIEW</p>
                         <Content>
-                            <p>มีร้านคาเฟ่ที่มีใกล้มอบ้างครับ</p>
-                            <p>มีร้านคาเฟ่ที่ไหนถ่ายรูปบ้างคะ</p>
-                            {this.state.items.map((item) => {
+                           
+                            {this.state.reviews.map((review) => {
                                 return (
-                                    <p>{item}</p>
+                                    <p>{review}</p>
                                 )
                             })}
 
@@ -145,10 +162,15 @@ export default class Community extends Component {
                     <p>COMMENT & REVIWE</p>
                 </ContainerBox>
                 <Test>
-                    <Input type="text" name="item" onChange={this.handleInputChange}></Input>
-                    <Button onClick={this.submitItem}>POST</Button>
+                    <div style={{ marginTop: "4em" }}>
+                        <Input type="text" name="comment" onChange={this.handleInputChange}></Input>
+                        <Button onClick={this.submitComment}>Submit Comment</Button>
+                    </div>
+                    <div style={{ margin: "2em" }}>
+                        <Input type="text" name="review" onChange={this.handleInputChange}></Input>
+                        <Button onClick={this.submitReview}>Submit Review</Button>
+                    </div>
                 </Test>
-                
             </div>
         )
     }
