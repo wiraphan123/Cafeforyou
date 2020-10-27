@@ -5,7 +5,7 @@ import BackgroundBlock from '../components/BackgroundBlock'
 import Showcafe from '../components/Showcafe'
 import { Title, Subtitle } from '../components/Typography'
 import transitnumber8 from '../assets/transitnumber8.jpg';
-import wakeupcafe from '../assets/wakeup-cafe.jpg';
+import wakeupcafe from '../assets/wakeup.jpg';
 import starbuck from '../assets/starbuck.jpg';
 
 const Button = styled.button`
