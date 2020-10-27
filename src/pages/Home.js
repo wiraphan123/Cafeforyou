@@ -67,7 +67,7 @@ function Home() {
           
           <Showcafe images={transitnumber8}>
             <h4>Transitnumber8</h4>
-            <p>ร้านกาแฟ/ชาเบเกอรี/เค้กของหวาน</p>
+            <p>ร้านกาแฟ/ชา/ถ่ายรูป</p>
           </Showcafe>
           <Showcafe images={wakeupcafe}>
             <h4>Wake Up</h4>

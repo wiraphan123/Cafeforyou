@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import BackgroundBlock from '../components/BackgroundBlock'
-import image from '../assets/wakeup.jpg'
+import images from '../assets/wakeup.jpg'
 
 
 const Container = styled.div`
