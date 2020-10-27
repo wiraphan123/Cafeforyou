@@ -1,12 +1,9 @@
-import React from 'react'
+// import React from 'react'
 import styled from 'styled-components'
 import backgroundImage from '../assets/community.jpg'
 import BackgroundBlock from '../components/BackgroundBlock'
 import { Link } from 'react-router-dom'
-import { render } from '@testing-library/react'
-
-
-
+import React, { Component } from 'react'
 
 const Title = styled.div`
 font-size:230px;
@@ -70,7 +67,7 @@ border: none;
     `
 
 const Button = styled.div`
-background-color: unset;
+    background-color: unset;
     border: 1px solid gray;
     border-radius: 5px;
     padding: 10px 30px;
@@ -84,47 +81,75 @@ background-color: unset;
     `
 
 
-function Community (){
-    return(
+export default class Community extends Component {
+    constructor() {
+        super()
 
-    <>
-    <BackgroundBlock src = {backgroundImage}>
-    <Title>Community</Title>
+        this.state = {
+            item: '',
+            items: []
+        }
+        this.handleInputChange = this.handleInputChange.bind(this)
+        this.submitItem = this.submitItem.bind(this)
 
-    </BackgroundBlock>
+    }
 
-        <ContainerWrapper>
-            <Container>
-                <p>COMMUNITY</p>
-                <Content>
-                    <p>WAKE UP หน้ามอ</p>
-                    <p>TRANSIT NO.8</p>
-                </Content>
-            </Container>
+    handleInputChange(event) {
+        let name = event.target.name
+        let value = event.target.value
 
-            <Container>
-                <p>POST</p>
-                <Content>
-                <p>มีร้านคาเฟ่ที่มีใกล้มอบ้างครับ</p>
-                <p>มีร้านคาเฟ่ที่ไหนถ่ายรูปบ้างคะ</p>
-            </Content>
-            </Container>
-    </ContainerWrapper>
-                
+        this.setState({ [name]: value })
+    }
 
-                
-                <ContainerBox> 
+    submitItem() {
+        let items = this.state.items
+        let item = this.state.item
+        items.push(item)
+
+        this.setState({ items: items })
+
+    }
+    render() {
+        return (
+            <div>
+                <BackgroundBlock src={backgroundImage}>
+                    <Title>Community</Title>
+                </BackgroundBlock>
+
+                <ContainerWrapper>
+                    <Container>
+                        <p>COMMUNITY</p>
+                        <Content>
+                            <p>WAKE UP หน้ามอ</p>
+                            <p>TRANSIT NO.8</p>
+                        </Content>
+                    </Container>
+
+                    <Container>
+                        <p>POST</p>
+                        <Content>
+                            <p>มีร้านคาเฟ่ที่มีใกล้มอบ้างครับ</p>
+                            <p>มีร้านคาเฟ่ที่ไหนถ่ายรูปบ้างคะ</p>
+                            {this.state.items.map((item) => {
+                                return (
+                                    <p>{item}</p>
+                                )
+                            })}
+
+                        </Content>
+                    </Container>
+                </ContainerWrapper>
+
+
+                <ContainerBox>
                     <p>COMMENT & REVIWE</p>
                 </ContainerBox>
                 <Test>
-                <Input type="text" placeholder ='The message'></Input>
-                <Button><Link to='/Community'>POST</Link></Button>
+                    <Input type="text" name="item" onChange={this.handleInputChange}></Input>
+                    <Button onClick={this.submitItem}>POST</Button>
                 </Test>
-              
-               
-
-</>
-    )
+                
+            </div>
+        )
+    }
 }
-
-export default Community
